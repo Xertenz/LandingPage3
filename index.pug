@@ -1,0 +1,343 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title AXIT
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="css/mdb.min.css")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/animate.min.css")
+    body
+
+        // Start Navbar
+        #navbar.navbar.navbar-expand-md.sticky-top
+            .container
+                .navbar-brand AX
+                    span IT
+                button.navbar-toggler(data-mdb-toggle="collapse", data-mdb-target="#mainNav")
+                    i.fa.fa-bars
+                .collapse.navbar-collapse#mainNav
+                    ul.navbar-nav.ms-auto
+                        li.nav-item
+                            a.nav-link(href="#") features
+                        li.nav-item
+                            a.nav-link(href="#") about
+                        li.nav-item
+                            a.nav-link(href="#") pricing
+                        li.nav-item
+                            a.nav-link(href="#") reviews
+                        li.nav-item
+                            a.nav-link(href="#") contact
+        // End Navbar
+
+        // Start Header
+        header
+            .overlay
+            .container.h-100.position-relative
+                .row.h-100.align-items-center
+                    .col-md-6
+                        .text.animate__animated.animate__backInLeft
+                            span.title AX
+                                span IT
+                            span.subtitle.mb-4 modern axure template for beautiful prototypes
+                            span.text.mb-5 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo officia qui expedita vitae alias atque quis reprehenderit quaerat cumque explicabo veritatis dolore eligendi, minima magnam maiores laboriosam.
+                            button.btn-download download
+                    .col-md-6
+                        .form.px-4.py-5.rounded.bg-white.animate__animated.animate__backInRight
+                            span.form-title.d-block.text-center.mb-4.text-capitalize try your 
+                                span.free free 
+                                |trial today
+                            form(action="#", method="POST")
+                                .form-outline.mb-3
+                                    input.form-control#name(type="text", name="name")
+                                    label.form-label(for="name") Name
+                                .form-outline.mb-3
+                                    input.form-control#email(type="email", name="email")
+                                    label.form-label(for="email") Email
+                                .form-outline.mb-4
+                                    input.form-control#password(type="password", name="password")
+                                    label.form-label(for="password") Password
+                                button.form-btn.btn.btn-primary.btn-block.fs-5 Get Started
+            
+        // End Header
+
+        // Start Social Media Section
+        section.social.py-3
+            .container
+                .row.align-items-center
+                    .col-md-5
+                        .text.wow.animate__animated.animate__bounceIn
+                            p.title.mb-1 social media
+                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio excepturi sed.
+                    .col-md-7
+                        .icons.wow.animate__animated.animate__bounceIn
+                            a(href="#"): i.fab.fa-facebook
+                            a(href="#"): i.fab.fa-twitter
+                            a(href="#"): i.fab.fa-google
+                            a(href="#"): i.fab.fa-pinterest
+                            a(href="#"): i.fab.fa-instagram
+                            a(href="#"): i.fab.fa-youtube
+                            a(href="#"): i.fa.fa-wifi
+        // End Social Media Section
+
+        // Start Tabs Section
+        section.tabs
+            .container
+                .row
+                    .col-md-7
+                        .tabs-container.wow.animate__animated.animate__fadeInDown
+                            .tabs
+                                .tab.tab-1.active: p Tab 1
+                                .tab.tab-2: p Tab 2
+                                .tab.tab-3: p Tab 3
+                            .contents
+                                .content.content-1.active
+                                    .title
+                                        p tabs with soft transitioning effect.
+                                    .text
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quis vitae recusandae optio, aut eum laboriosam fugiat perferendis impedit, veniam, culpa illum repellat quaerat nostrum debitis eos neque provident perspiciatis. Voluptatem, nemo porro harum quod recusandae tenetur id quam aperiam.
+                                    button.download Download
+                                .content.content-2
+                                    .title
+                                        p Tab title 2
+                                    .text
+                                        p Est quis vitae recusandae optio, aut eum laboriosam fugiat Lorem ipsum dolor sit veniam, culpa illum repellat quaerat nostrum debitis eos amet, consectetur adipisicing elit. Voluptatem, nemo porro harum quod recusandae tenetur id quam aperiam. perferendis impedit, neque provident perspiciatis.
+                                    button.download Download
+                                .content.content-3
+                                    .title
+                                        p Tab title 3
+                                    .text
+                                        p nostrum debitis eos neque provident. aut eum laboriosam fugiat perferendis impedit, veniam, culpa illum repellat quaerat nemo porro harum quod recusandae tenetur perspiciatis. Voluptatem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quis vitae recusandae optio, id quam aperiam.
+                                    button.download Download
+                    .col-md-5
+                        .image.h-100.d-flex.align-items-center.wow.animate__animated.animate__fadeInUp
+                            img.img-fluid(src="images/mosque.webp")
+
+        // End Tabs Section
+
+        // Start Sub List Section
+        section.sub-list
+            .container
+                .row
+                    .col-md-6
+                        .picture.h-100.d-flex.justify-content-center.align-items-center.wow.animate__animated.animate__fadeInBottomLeft
+                            img.img-fluid(src="images/home.jpg")
+                    .col-md-6
+                        .text.wow.animate__animated.animate__fadeInBottomRight
+                            .title
+                                h2 sub list section
+                            .desc
+                                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non possimus expedita necessitatibus deleniti distinctio nobis fugit incidunt dignissimos pariatur veniam quas molestias, accusamus dolore harum.
+                            .list
+                                .item
+                                    .icon
+                                        i.fa-solid.fa-cloud-arrow-up
+                                    .info
+                                        h3 title
+                                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia aspernatur consequuntur?
+                                .item
+                                    .icon
+                                        i.fa-solid.fa-cloud-arrow-down
+                                    .info
+                                        h3 title
+                                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quia aspernatur consequuntur?
+        // End Sub List Section
+
+        // Start Standard Picture Section
+        section.standard-pic
+            .container
+                .row
+                    .col-md-6
+                        .text.wow.animate__animated.animate__flipInX
+                            .title
+                                h2 standard picture section
+                            .desc
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ad officiis id asperiores. Earum cupiditate deserunt, repellendus a in officiis at. Quo nostrum quod illo enim animi iusto fugit repellat
+                                br
+                                p reiciendis inventore adipisci magni laboriosam vel et nobis illum. Minima.
+                    .col-md-6
+                        .image.h-100.d-flex.justify-content-center.align-items-center.wow.animate__animated.animate__flipInX
+                            img.img-fluid(src="images/home2.jpg")
+        // End Standard Picture Section
+
+        // Start Awesome Section
+        section.awesome
+            .sec-top.wow.animate__animated.animate__fadeInDownBig
+                h1.title why this is awesome
+                p.text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .items
+                .container
+                    .row
+                        .col-md-4
+                            .item.wow.animate__animated.animate__fadeInLeftBig
+                                .icon: i.fa-solid.fa-lightbulb
+                                .title: h3 thoutful design
+                                .text: p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil odit molestiae assumenda ab quae officia eligendi ipsam praesentium.
+                        .col-md-4
+                            .item.wow.animate__animated.animate__fadeInUpBig
+                                .icon: i.fa.fa-keyboard
+                                .title: h3 well crafted
+                                .text: p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil odit molestiae assumenda ab quae officia eligendi ipsam praesentium.
+                        .col-md-4
+                            .item.wow.animate__animated.animate__fadeInRightBig
+                                .icon: i.fa-solid.fa-bolt
+                                .title: h3 easy to customize
+                                .text: p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil odit molestiae assumenda ab quae officia eligendi ipsam praesentium.
+        // End Awesome Section
+
+        // Start Pricing Section
+        section.pricing.text-center
+            .sec-top.wow.animate__animated.animate__fadeInDownBig
+                h1.title pricing table
+                p.text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .items
+                .container
+                    .row
+                        .col-md-4
+                            .item.wow.animate__animated.animate__fadeInLeftBig
+                                .top
+                                    .title.py-4
+                                        h3.mb-0 basics
+                                    .number
+                                        span.dollar $
+                                        span.num 0
+                                        p free for life
+                                .info
+                                    ul
+                                        li 1 gb of space
+                                        li 10 gb of bandwidth
+                                        li 3 websites
+                                        li basic customization
+                                        li wordpress integration
+                                        li email support
+                        .col-md-4
+                            .item.middle.wow.animate__animated.animate__fadeInUpBig
+                                .top
+                                    .title.py-4
+                                        h3.mb-0 professional
+                                    .number
+                                        span.dollar $
+                                        span.num 19
+                                        p monthly payment
+                                        span.popular our most popular
+                                .info
+                                    ul
+                                        li 5 gb of space
+                                        li 50 gb of bandwidth
+                                        li 12 websites
+                                        li advance customization
+                                        li wordpress integration
+                                        li email support
+                        .col-md-4
+                            .item.wow.animate__animated.animate__fadeInRightBig
+                                .top
+                                    .title.py-4
+                                        h3.mb-0 enterprise
+                                    .number
+                                        span.dollar $
+                                        span.num 70
+                                        p monthly payment
+                                .info
+                                    ul
+                                        li unlimited space
+                                        li unlimited bandwidth
+                                        li 100 websites
+                                        li advance customization
+                                        li wordpress integration
+                                        li 24/7 customer support
+        // End Pricing Section
+
+        // Start Customers Section
+        section.customers
+            .sec-top.text-center.wow.animate__animated.animate__fadeInDownBig
+                h1.title what our customers are saying
+                p.text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            .items
+                .container
+                    .row
+                        .col-10.offset-1.col-md-4.offset-md-0
+                            .item.wow.animate__animated.animate__zoomIn
+                                .text.mb-4
+                                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis, laudantium fuga laboriosam praesentium dolores porro architecto, beatae reprehenderit, culpa cumque molestias voluptate repellat.
+                                .person
+                                    img.img-fluid(src="images/John-Doe.jpg", alt="")
+                                    .info.d-flex.flex-column.justify-content-center
+                                        p.name john doe
+                                        p.job manager
+                        .col-10.offset-1.col-md-4.offset-md-0
+                            .item.wow.animate__animated.animate__zoomIn
+                                .text.mb-4
+                                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis, laudantium fuga laboriosam praesentium dolores porro architecto, beatae reprehenderit, culpa cumque molestias voluptate repellat.
+                                .person
+                                    img.img-fluid(src="images/John-Doe.jpg", alt="")
+                                    .info.d-flex.flex-column.justify-content-center
+                                        p.name john doe
+                                        p.job freelancer
+                        .col-10.offset-1.col-md-4.offset-md-0
+                            .item.wow.animate__animated.animate__zoomIn
+                                .text.mb-4
+                                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis, laudantium fuga laboriosam praesentium dolores porro architecto, beatae reprehenderit, culpa cumque molestias voluptate repellat.
+                                .person
+                                    img.img-fluid(src="images/John-Doe.jpg", alt="")
+                                    .info.d-flex.flex-column.justify-content-center
+                                        p.name john doe
+                                        p.job manager
+        // End Customers Section
+
+        // Start Design Section
+        section.design.text-white
+            .overlay
+            .container
+                .sec-top.text-center.wow.animate__animated.animate__fadeInDownBig
+                    h1.title stylish axore design
+                    span.text Use the sections you need. Remove the ones you don't. Create gorgeous prototypes faster than ever!
+                    button.btn-download download
+        // End Design Section
+
+        // Start Contact Section
+        section.contact
+            .container
+                .sec-top.text-center.wow.animate__animated.animate__fadeInDownBig
+                    h1.title contact us
+                    p.text Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                .form.text-center.wow.animate__animated.animate__slideInUp
+                    form(action="#", method="post")
+                        .row
+                            .col-md-6
+                                .form-outline.mb-4
+                                    input.form-control#name(type="text")
+                                    label.form-label(for="name") Name
+                                .form-outline.mb-4
+                                    input.form-control#email(type="email")
+                                    label.form-label(for="email") Email
+                                .form-outline
+                                    input.form-control#subject(type="text")
+                                    label.form-label(for="subject") Subject
+                            .col-md-6
+                                .form-outline.h-100
+                                    textarea.form-control#message()
+                                    label.form-label(for="message") Message
+                        button.send-msg.btn.btn-primary.mt-4 Send Message
+        // End Contact Section
+
+        // Start Footer
+        footer.text-center
+            .icons.wow.animate__animated.animate__flipInX
+                a(href="#"): i.fab.fa-facebook
+                a(href="#"): i.fab.fa-twitter
+                a(href="#"): i.fab.fa-google
+                a(href="#"): i.fab.fa-pinterest
+                a(href="#"): i.fab.fa-instagram
+                a(href="#"): i.fab.fa-youtube
+                a(href="#"): i.fa.fa-wifi
+            .copy.wow.animate__animated.animate__flipInX
+                span &copy; 2022 Axure Themes
+
+        // End Footer
+
+        script(src="js/jquery.min.js") 
+        script(src="js/mdb.min.js") 
+        script(src="js/wow.min.js") 
+        script(src="js/main.js") 

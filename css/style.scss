@@ -1,0 +1,851 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap");
+
+:root {
+  --main-color: orange;
+}
+
+// Start Global Rulez
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  font-family: "Play", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+%bgCover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+%underline {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    left: 0;
+    bottom: -22px;
+    background-color: var(--main-color);
+  }
+}
+// End Global Rulez
+
+// Start Navbar
+.navbar {
+  background-color: #222;
+  z-index: 3;
+  .navbar-brand {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    > span {
+      font-weight: 300;
+      color: var(--main-color);
+    }
+  }
+  .navbar-toggler {
+    color: #fff;
+    i {
+      font-size: 25px;
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      color: #aaa;
+      text-transform: capitalize;
+      font-weight: 600;
+      font-family: "Play", sans-serif;
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+}
+// End Navbar
+
+// Start Header
+header {
+  position: relative;
+  background-image: url(../images/header.jpg);
+  @extend %bgCover;
+  color: #fff;
+  padding-bottom: 4rem !important;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 70%);
+    z-index: 1;
+  }
+  .container {
+    z-index: 2;
+    .text {
+      .title {
+        font-size: 5rem;
+        display: block;
+        font-weight: 700;
+
+        > span {
+          font-weight: 300;
+          color: var(--main-color);
+        }
+      }
+      .subtitle {
+        display: block;
+        font-size: 2.25rem;
+        line-height: 1.2;
+        font-family: "Play", sans-serif;
+        text-transform: uppercase;
+      }
+      .text {
+        font-weight: 300;
+        display: block;
+        font-family: "Play", sans-serif;
+        color: #ddd;
+      }
+      .btn-download {
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        border: 2px solid #fff;
+        padding: 0.4rem 1.8rem;
+        font-size: 1.2rem;
+        font-family: "Play", sans-serif;
+        text-transform: capitalize;
+        transition: background-color 0.23s ease;
+        &:hover {
+          background-color: var(--main-color);
+        }
+      }
+    }
+    .form {
+      border: 1px solid rgba(#aaa, 0.4);
+      width: 400px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      .form-title {
+        color: #222;
+        font-size: 1.4rem;
+        font-family: "Play", serif;
+        font-weight: 600;
+        .free {
+          color: var(--main-color);
+        }
+      }
+      form {
+        .form-btn {
+          border-radius: 0;
+          font-family: "Play", sans-serif;
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .text {
+      .subtitle {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .text {
+      text-align: center;
+      margin-bottom: 2rem !important;
+    }
+  }
+  @media (max-width: 575px) {
+    .text {
+      .subtitle {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}
+// End Header
+
+// Start Social Media Section
+.social {
+  box-shadow: 0 5px 10px #aaa;
+  .text {
+    font-family: "Play", sans-serif;
+    .title {
+      font-size: 1.5rem;
+      color: #222;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+    .text {
+      font-size: 14px;
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    a {
+      color: #888;
+      font-size: 3rem;
+      padding: 0 13px;
+      transition: 0.23s ease;
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    .icons {
+      justify-content: center;
+      a {
+        font-size: 29px;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    .icons {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+// End Social Media Section
+
+// Start Tabs Section
+section.tabs {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ededed;
+  @media (max-width: 767px) {
+    .container > .row {
+      gap: 4rem;
+    }
+  }
+  .tabs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 480px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+      max-width: 100%;
+      @media (max-width: 480px) {
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 2rem;
+        .tab {
+          width: 80px !important;
+          height: 50px !important;
+          line-height: 50px !important;
+          &:not(:last-child) {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      .tab {
+        background-color: #444;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        font-family: "Play", sans-serif;
+        line-height: 100px;
+        border-radius: 5px;
+        user-select: none;
+        cursor: pointer;
+        transition: background-color 0.23s ease;
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+        &.active {
+          background-color: var(--main-color);
+        }
+      }
+    }
+    .contents {
+      font-family: "Play", sans-serif;
+      .content {
+        display: none;
+        &.active {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+        .title {
+          text-transform: capitalize;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+        button {
+          align-self: flex-start;
+          background-color: var(--main-color);
+          color: #fff;
+          outline: none;
+          border: none;
+          padding: 0.4rem 1.8rem;
+          margin-top: 1.7rem;
+          font-size: 1.2rem;
+          text-transform: capitalize;
+          transition: background-color 0.23s ease;
+        }
+      }
+    }
+  }
+}
+// End Tabs Section
+
+// Start Sub List Section
+section.sub-list {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  @media (max-width: 991px) {
+    .container {
+      .row {
+        flex-direction: column;
+        gap: 4rem;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  img {
+    max-width: 80%;
+  }
+  .text {
+    font-family: "Play", sans-serif;
+    .title {
+      position: relative;
+      margin-bottom: 40px;
+      @extend %underline;
+      h2 {
+        color: #444;
+        font-size: 1.5rem;
+      }
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+    .desc {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      p {
+        margin: 0;
+        color: #888;
+      }
+    }
+    .list {
+      .item {
+        padding-left: 3.5rem;
+        position: relative;
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+        .icon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 1rem;
+          color: var(--main-color);
+          border: 1px solid var(--main-color);
+          // padding: 1rem;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 38px;
+          border-radius: 50%;
+        }
+        .info {
+          h3 {
+            font-size: 1.2rem;
+            color: #444;
+            text-transform: capitalize;
+          }
+          p {
+            font-size: 1rem;
+            color: #888;
+          }
+        }
+      }
+    }
+  }
+}
+// End Sub List Section
+
+// Start Standard Picture Section
+section.standard-pic {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #eee;
+  @media (max-width: 991px) {
+    .container {
+      .row {
+        flex-direction: column;
+        gap: 4rem;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .text {
+    font-family: "Play", sans-serif;
+    .title {
+      position: relative;
+      margin-bottom: 40px;
+      @extend %underline;
+      h2 {
+        color: #444;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+      }
+    }
+    .desc {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      p {
+        margin: 0;
+        color: #888;
+      }
+    }
+  }
+  .image {
+    img {
+      max-width: 80%;
+    }
+  }
+}
+// End Standard Picture Section
+
+// Start Awesome Section
+section.awesome {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  @media (max-width: 767px) {
+    .container {
+      .row {
+        gap: 4rem;
+      }
+    }
+    .sec-top {
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .sec-top {
+    .title {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 45px;
+      @extend %underline;
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 410px) {
+        font-size: 1.5rem;
+      }
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .text {
+      margin-bottom: 3.5rem;
+      color: #888;
+    }
+  }
+  .items {
+    .item {
+      .icon {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        text-align: center;
+        border: 2px solid var(--main-color);
+        color: var(--main-color);
+        margin-bottom: 1.5rem;
+        i {
+          font-size: 2.5rem;
+          line-height: 70px;
+        }
+      }
+      .title {
+        margin-bottom: 1.5rem;
+        h3 {
+          font-size: 1.4rem;
+          text-transform: capitalize;
+          font-weight: 600;
+          color: #444;
+        }
+      }
+      .text {
+        p {
+          color: #888;
+        }
+      }
+    }
+  }
+}
+// End Awesome Section
+
+// Start Pricing Section
+section.pricing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #eee;
+  @media (max-width: 767px) {
+    .container {
+      .row {
+        gap: 3rem;
+      }
+    }
+  }
+  .sec-top {
+    .title {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 45px;
+      @extend %underline;
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 575px) {
+        font-size: 1.5rem;
+      }
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .text {
+      margin-bottom: 5.5rem;
+      color: #888;
+    }
+  }
+  .items {
+    .item {
+      .top {
+        .title {
+          background-color: #333;
+          margin-bottom: 2px;
+          h3 {
+            font-size: 1.2rem;
+            text-transform: capitalize;
+            font-weight: 800;
+            color: #fff;
+          }
+        }
+        .number {
+          padding: 20px 0;
+          color: #fff;
+          background-color: #333;
+          font-weight: 600;
+          line-height: 1.4;
+          border-bottom: 3px solid orange;
+          .dollar {
+            font-size: 2rem;
+          }
+          .num {
+            font-size: 4rem;
+          }
+          p {
+            text-transform: capitalize;
+            margin: 0;
+            font-style: italic;
+            padding-bottom: 1rem;
+            color: #888;
+          }
+        }
+      }
+      .info {
+        background-color: #fff;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-size: 14px;
+            border-bottom: 1px solid #ddd;
+            color: #888;
+          }
+        }
+      }
+      &.middle {
+        margin-top: -40px;
+        @media (max-width: 767px) {
+          margin-top: 0;
+        }
+        .number {
+          position: relative;
+          padding-bottom: 60px;
+          .popular {
+            background-color: var(--main-color);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            line-height: calc(40px + 3px);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+// End Pricing Section
+
+// Start Customers Section
+section.customers {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @media (max-width: 767px) {
+    .container > .row {
+      gap: 2rem;
+    }
+  }
+  .sec-top {
+    .title {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 45px;
+      @extend %underline;
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 575px) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: 460px) {
+        font-size: 1.4rem;
+      }
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .text {
+      margin-bottom: 5.5rem;
+      color: #888;
+    }
+  }
+  .items {
+    .item {
+      .text {
+        background-color: #eee;
+        padding: 1rem;
+        font-style: italic;
+        border-radius: 5px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          bottom: -24px;
+          left: 33px;
+          border-style: solid;
+          border-width: 12px;
+          border-color: #eee transparent transparent;
+        }
+        p {
+          margin: 0;
+        }
+      }
+      .person {
+        display: flex;
+        img {
+          width: 90px;
+          border-radius: 50%;
+          margin-right: 1rem;
+        }
+        .info {
+          p {
+            margin: 0;
+            text-transform: capitalize;
+            &.name {
+              font-size: 1.4rem;
+              font-weight: 600;
+            }
+            &.job {
+              color: #888;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// End Customers Section
+
+// Start Design Section
+section.design {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(../images/town.jpg);
+  @extend %bgCover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 70%);
+    z-index: 1;
+  }
+  .sec-top {
+    position: relative;
+    z-index: 2;
+    .title {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 45px;
+      @media (max-width: 575px) {
+        font-size: 1.8rem;
+      }
+      @media (max-width: 380px) {
+        font-size: 1.25rem;
+      }
+      @extend %underline;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+      }
+    }
+    .text {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 2.5rem;
+      font-weight: 200;
+    }
+    .btn-download {
+      background-color: transparent;
+      color: #fff;
+      outline: none;
+      border: 2px solid #fff;
+      padding: 0.4rem 1.8rem;
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      transition: background-color 0.23s ease;
+      &:hover {
+        background-color: var(--main-color);
+      }
+    }
+  }
+}
+// End Design Section
+
+// Start Contact Section
+section.contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .sec-top {
+    position: relative;
+    z-index: 2;
+    .title {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 45px;
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+      @media (max-width: 575px) {
+        font-size: 1.5rem;
+      }
+      @extend %underline;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .form {
+    margin-top: 4rem;
+    .row {
+      @media (max-width: 767px) {
+        gap: 1.5rem;
+        > div:last-child {
+          height: 8rem;
+        }
+      }
+    }
+    textarea {
+      height: 100%;
+      overflow-y: scroll;
+      resize: none;
+    }
+    .send-msg {
+      font-family: "Play", sans-serif;
+      text-transform: capitalize;
+      font-size: 1.1rem;
+    }
+  }
+}
+// End Contact Section
+
+// Start Footer
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #111;
+  .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 5px;
+    a {
+      color: #ddd;
+      font-size: 1.5rem;
+      padding: 0 13px;
+      transition: 0.23s ease;
+      @media (max-width: 475px) {
+        font-size: 1rem;
+      }
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+  .copy {
+    font-size: 14px;
+    color: #888;
+  }
+}
+// End Footer
